@@ -1,6 +1,5 @@
 body {
-    background-color: #F0F0F0;
-    background-image: url(../img/bg.jpg);
+    background-color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -48,8 +47,7 @@ hr {
 }
 
 .header {
-    background-color: #f0f0f0;
-    background-image: url(../img/bg-top.jpg);
+    background-color: #ececee;
     border-bottom: 1px solid #dddddd;
     box-shadow: 0 0 3px rgba(190, 190, 190, 0.75);
     top: 0;
@@ -57,15 +55,19 @@ hr {
     left: 0;
     z-index: 1030;
     height: auto;
-    padding: 20px 0;
+    padding:25px 0;
     margin-bottom: 20px;
 }
 
 .header img {
-    float: left;
-    height: 85px;
-    margin-right: 15px;
-    padding: 11px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    padding:11px;
+    vertical-align: middle;
+
 }
 
 .header li {
@@ -416,3 +418,8 @@ hr {
 .badge-right-float {
     float: right;
 }
+
+/*****************************************MY CODE*******************************************/
+/**{
+  outline: 1px solid red;
+}*/
