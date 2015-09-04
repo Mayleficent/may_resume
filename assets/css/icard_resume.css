@@ -452,7 +452,7 @@ hr {
 	width: 50px;
 	height: 48px;
 	line-height: 48px;
-	right: 20px;
+  right:0px;
 	bottom: 30px;
 	padding-top: 1px;
   -webkit-border-radius:10px;
