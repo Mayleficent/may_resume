@@ -357,10 +357,13 @@ hr {
     background: #58c1de;
 }
 
-.list-strip li:nth-child(even) {
+.list-strip li:nth-child(2) {
     background: #66b967;
 }
 
+.list-strip li:nth-child(3) {
+    background: #D84E4E;
+}
 .btn-flat {
     background: #ba4e4e;
     color: white;
@@ -444,19 +447,19 @@ hr {
 	visibility: hidden;
 	overflow: hidden;
 	text-align: center;
-	z-index: 99999999;
-  background-color: #33b6cb;
+  background-color: #249ebd;
 	color: #eeeeee;
 	width: 50px;
 	height: 48px;
 	line-height: 48px;
 	right: 30px;
 	bottom: 10px;
-	padding-top: 2px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+	padding-top: 1px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius: 10px;
+  -o-border-radius:10px;
+   border-radius:10px;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-ms-transition: all 0.5s ease-in-out;
@@ -464,7 +467,7 @@ hr {
 	transition: all 0.5s ease-in-out;
 }
 .scroll-top-wrapper:hover {
-	background-color:#249ebd;
+	background-color:#33b6cb;
 }
 .scroll-top-wrapper.show {
     visibility:visible;
