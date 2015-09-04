@@ -9,7 +9,7 @@
   <title>Moyhour Ang Resume</title>
   <meta name="description" content="Moyhour Ang Resume">
 
-  <link rel="canonical" href="http://ddbullfrog.com/">
+  <link rel="canonical" href=http://mayleficent.github.io/may_resume/"">
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/icard_resume.css">
@@ -43,8 +43,8 @@
           <div class="col-sm-4 visible-md-block visible-lg-block visible-sm-block">
             <p>#30,32 Eo, Street 12, </p>
             <p>Borey Peng Huot,</p>
-            <p>Songkat Niron, Khan Mean Chey </p>
-            <p>Phnom Penh</p>
+            <p>Songkat Niron, Khan Mean Chey,</p>
+            <p>Phnom Penh, Cambodia</p>
           </div><!-- end of col-sm-4 visible-md-block visible-lg-block visible-sm-block-->
         </div><!-- span4 text-center -->
         <div class="span4 text-center">
@@ -88,9 +88,11 @@
                   </p>
                 </div>
                 <div class="timeline-body">
-                  <p>Responsible for testing web, mobile, and window applications including both UI and functions to make sure it works properly</p>
-                  <p>Responsible for correcting grammar and spelling errors</p>
-                  <p>Report bugs to the devlopers and keep track to make sure all the bugs are fixed</p>
+                  <ul>
+                    <li>Testing web, mobile, and window applications including UI and function to make sure they work properly</li>
+                    <li>Correcting grammar and spelling errors</li>
+                    <li>Reporting bugs to the developers and keep track to make sure all the bugs are fixed</li>
+                  </ul>
                 </div>
               </li>
               <li class="timeline-inverted">
@@ -106,9 +108,11 @@
                   </p>
                 </div>
                 <div class="timeline-body">
-                  <p>Maintained and updated restaurant website to make sure the content, photos, and price are up to date</p>
-                  <p>Responsible for customer service including order taking and cash register operations</p>
-                  <p>Kept track of inventory.</p>
+                  <ul>
+                    <li>Maintained and updated restaurant website to make sure the content, photos, and price are up to date</li>
+                    <li>Responsible for customer service including order taking and cash register operations</li>
+                    <li>Kept track of inventory.</li>
+                  </ul>
                 </div>
               </div>
             </li>
@@ -116,7 +120,7 @@
               <div class="timeline-badge info">2011</div>
               <div class="timeline-panel grid-block">
                 <div class="timeline-heading">
-                  <h4 class="timeline-title">MobiTel - CamGSM Company Limited </h4>
+                  <h4 class="timeline-title">Mobitel - CamGSM Company Limited </h4>
                   <p><small class="text-muted">Customer Service Representative</small></p>
                   <p><small class="text-muted">
                     <i class="fa fa-calendar"></i> (2011 - 2012) |
@@ -125,9 +129,11 @@
                 </p>
               </div>
               <div class="timeline-body">
-                <p>Provided in person support to customers in need of guidance related to technical issues</p>
-                <p>Handled complex issues with exceptionally low handle times while providing a high quality level of service</p>
-                <p>Listened to the customers' need and recommended or up sold them to meet their needs</p>
+                <ul>
+                  <li>Provided in person support to customers in need of guidance related to technical issues</li>
+                  <li>Handled complex issues with exceptionally low handle times while providing a high quality level of service</li>
+                  <li>Listened to the customers' need and recommended or up sold them to meet their needs</li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -157,7 +163,7 @@
                   <span class="caption-skill">HTML</span>
                   <div class="progress">
                     <div class="progress-bar" style="width: 90%">
-                      <span>100% </span>
+                      <span>90% </span>
                     </div>
                   </div>
                 </li>
@@ -278,7 +284,7 @@
     </div><!-- end fo wrapper-->
   </div><!-- end of page-content -->
 
- <!-- Footer-->
+  <!-- Footer-->
   <div class="footer">
     <div class="container-fluid">
       <div class="row-fluid">
@@ -297,11 +303,13 @@
     </div><!-- end of container-fluid -->
   </div><!--end of footer -->
 
-  <a class="page-scroll" href="#page-top">
-    <div class="back-to-top" style="display: block;">
-      <i class="fa fa-angle-up"></i>
-    </div>
-  </a>
+  <!-- Scrolling to the top button -->
+  <div class="scroll-top-wrapper ">
+    <span class="scroll-top-inner">
+      <i class="fa fa-2x fa-arrow-circle-up"></i>
+    </span>
+  </div><!-- end of scroll-top-wrapper -->
+
   <script type="text/javascript" src="assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   <script>
@@ -313,27 +321,27 @@
   ga('create', 'UA-63653234-1', 'auto');
   ga('send', 'pageview');
 
-   //Script for scroll to the top button
-  $(document).ready(function(){
-
-    //Check to see if the window is top if not then display button
-    $(window).scroll(function(){
-      if ($(this).back-to-top() >100) {
-        $('.back-to-top').fadeIn();
+  //Script for scrolling to the top button
+  $(function(){
+    $(document).on( 'scroll', function(){
+      if ($(window).scrollTop() > 100) {
+        $('.scroll-top-wrapper').addClass('show');
       } else {
-        $('.back-to-top').fadeOut();
+        $('.scroll-top-wrapper').removeClass('show');
       }
     });
-
-    //Click event to scroll to top
-    $('.back-to-top').click(function(){
-      $('html, body').animate({scrollTop : 0},900);
-      return false;
-    });
+    
+    $('.scroll-top-wrapper').on('click', scrollToTop);
   });
 
+  function scrollToTop() {
+    verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+    element = $('body');
+    offset = element.offset();
+    offsetTop = offset.top;
+    $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+  }
+
   </script>
-
 </body>
-
 </html>

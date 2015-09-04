@@ -52,8 +52,7 @@ hr {
 }
 
 .header {
-    background-color: #249ebd;
-    border-bottom: 1px solid #dddddd;
+    background: #249ebd;
     box-shadow: 0 0 3px rgba(190, 190, 190, 0.75);
     top: 0;
     right: 0;
@@ -68,11 +67,12 @@ hr {
 .header img {
     width: 150px;
     height: 150px;
+    border:8px solid #fff;
     border-radius: 50%;
     -webkit-border-radius:50%;
     -moz-border-radius:50%;
-    border:8px solid #fff;
-
+    -ms-border-radius: 50%;
+    -o-border-radius:50%;
 }
 
 .header li {
@@ -330,7 +330,7 @@ hr {
     right: -13px;
     display: inline-block;
     background: #D84E4E;
-    padding: 1px 5px;
+    padding: 1px 4px;
     border-radius: 5px;
 }
 
@@ -438,23 +438,39 @@ hr {
   outline: 1px solid red;
 }*/
 
-.back-to-top{
-	width:50px;
-	height:50px;
-	padding:10px;
-	text-align:center;
-	font-weight: bold;
-	color: white;
-	text-decoration: none;
-	position:fixed;
-	bottom:5px;
-	right:10px;
-	display:none;
-  background:#58c1de;
+.scroll-top-wrapper {
+  position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+  background-color: #33b6cb;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 10px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
-.back-to-top:hover{
-	text-decoration:none;
+.scroll-top-wrapper:hover {
+	background-color:#249ebd;
 }
-.back-to-top .fa{
-  font-size: 30px;
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	  opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
 }
