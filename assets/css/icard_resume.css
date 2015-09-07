@@ -3,7 +3,7 @@
 body {
     background-color: #fff;
     font-family: 'Arimo', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
 }
 a {
     color: #fff;
@@ -93,7 +93,7 @@ hr {
 .position{
   text-transform: uppercase;
   color:#fff;
-  font-size:20px;
+  font-size:22px;
 }
 .grid-block {
     background-color: #f0f0f0;
